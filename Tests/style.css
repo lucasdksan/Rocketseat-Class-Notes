@@ -1,0 +1,118 @@
+/* Start - Configurações iniciais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+fieldset {
+    border: none;
+}
+
+ul, 
+ol, 
+li {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+/* End - Configurações iniciais */
+
+/* Start - Test */
+
+main.one {
+    display: flex;
+    align-items: center;
+    height: 510px;
+    width: 100%;
+}
+
+main.one div.element {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/WikiFont_uniE033_-_heart_-_red.svg/512px-WikiFont_uniE033_-_heart_-_red.svg.png');
+    background-repeat: no-repeat;
+    background-size: 230px;
+    background-position: center;
+}
+
+main.one div.element p {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+div.box {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+div.box1 {
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+div.box2 {
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+div.box3 {
+    background-color:green;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer"
+    ;
+
+    grid-template-rows: 30px 1fr 40px;
+}
+
+header {
+    background-color: royalblue;
+    grid-area: header;
+}
+
+main {
+    background-color: cadetblue;
+    grid-area: main;
+}
+
+aside {
+    background-color: red;
+    grid-area: aside;
+}
+
+footer {
+    background-color: aqua;
+    grid-area: footer;
+}
+
+/* End - Test */
