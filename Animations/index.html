@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation examples</title>
+    <style>
+        div.point {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+            position: relative;
+
+            animation-name: example-two;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+        }
+
+        @keyframes example-one {
+            from {
+                background-color: blueviolet;
+            }
+
+            to {
+                background-color: rosybrown;
+            }
+        }
+
+        @keyframes example-two {
+            0% {
+                background-color: lawngreen;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: forestgreen;
+                left: 600px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: bisque;
+                left: 600px;
+                top: 600px;
+            }
+
+            75% {
+                background-color: blue;
+                left: 0px;
+                top: 600px;
+            }
+
+            100% {
+                background-color: brown;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="point"></div>
+</body>
+</html>
